@@ -1,0 +1,44 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+      - mongo
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=La_Belle_Mousse
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Molfarka8
+      - MONGODB_HOST=mongo
+      - MONGODB_PORT=27017
+      - MONGODB_DATABASE=La_Belle_Mousse
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=La_Belle_Mousse
+      - MYSQL_ROOT_PASSWORD=Molfarka8
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=La_Belle_Mousse
+
+volumes:
+  mysql_data:
+  mongo_data:

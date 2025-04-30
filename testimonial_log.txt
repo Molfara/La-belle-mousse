@@ -1,0 +1,92 @@
+2025-04-30 07:52:43 - Formulaire soumis
+Array
+(
+    [name] => Mur Mur
+    [rating] => 1
+    [type] => service
+    [text] => J’ai passé une commande, mais personne ne m’a rappelée.
+Je suis déçue du manque de suivi. Un simple appel ou message aurait suffi pour confirmer la commande. Merci d’améliorer votre service client.
+)
+
+Résultats de validation: Le témoignage est obligatoire
+2025-04-30 07:57:30 - Formulaire soumis
+Array
+(
+    [name] => Jojo
+    [rating] => 5
+    [type] => service
+    [text] => Excellent
+)
+
+Résultats de validation: OK
+Connexion à MongoDB...
+Connexion à MongoDB réussie
+Document à insérer: Array
+(
+    [customer_name] => Jojo
+    [rating] => 5
+    [testimonial_type] => service
+    [testimonial_text] => Excellent
+    [created_at] => MongoDB\BSON\UTCDateTime Object
+        (
+            [milliseconds] => 1745999850000
+        )
+
+    [approved] => 1
+)
+
+Exception: No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'mongo']. Topology type: Single
+2025-04-30 08:02:58 - Formulaire soumis
+Array
+(
+    [name] => Hoho
+    [rating] => 5
+    [type] => service
+    [text] => Excellent
+)
+
+Résultats de validation: OK
+Connexion à MongoDB...
+Connexion à MongoDB réussie
+Document à insérer: Array
+(
+    [customer_name] => Hoho
+    [rating] => 5
+    [testimonial_type] => service
+    [testimonial_text] => Excellent
+    [created_at] => MongoDB\BSON\UTCDateTime Object
+        (
+            [milliseconds] => 1746000178000
+        )
+
+    [approved] => 1
+)
+
+Exception: No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'mongo']. Topology type: Single
+2025-04-30 08:07:27 - Formulaire soumis
+Array
+(
+    [name] => Lucas Dupont
+    [rating] => 4
+    [type] => service
+    [text] => La livraison est rapide, mais le dernier sachet était légèrement écrasé. Malgré ce petit détail, je recommande La Belle Mousse pour ses cafés exceptionnels.
+)
+
+Résultats de validation: OK
+Connexion à MongoDB...
+Connexion à MongoDB réussie
+Document à insérer: Array
+(
+    [customer_name] => Lucas Dupont
+    [rating] => 4
+    [testimonial_type] => service
+    [testimonial_text] => La livraison est rapide, mais le dernier sachet était légèrement écrasé. Malgré ce petit détail, je recommande La Belle Mousse pour ses cafés exceptionnels.
+    [created_at] => MongoDB\BSON\UTCDateTime Object
+        (
+            [milliseconds] => 1746000447000
+        )
+
+    [approved] => 1
+)
+
+Exception: No suitable servers found (`serverSelectionTryOnce` set): [Failed to resolve 'mongo']. Topology type: Single
